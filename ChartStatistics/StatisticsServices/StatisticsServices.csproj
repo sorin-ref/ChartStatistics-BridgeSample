@@ -36,12 +36,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Prospecter.cs" />
     <Compile Include="AverageComputer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bridge\output\readme.txt" />
+    <Content Include="Bridge\output\statisticsServices.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Bridge\bridge.json" />
@@ -56,6 +56,9 @@
       <HintPath>..\packages\Bridge.Html5.15.6.0\lib\net40\Bridge.Html5.dll</HintPath>
       <Private>True</Private>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Bridge\output\statisticsServices.d.ts" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Bridge.Min.15.6.0\build\Bridge.Min.targets" Condition="Exists('..\packages\Bridge.Min.15.6.0\build\Bridge.Min.targets')" />
